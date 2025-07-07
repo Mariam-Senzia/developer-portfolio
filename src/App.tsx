@@ -1,7 +1,11 @@
+import { ChakraProvider, Heading } from "@chakra-ui/react";
+
 function App() {
   return (
     <>
-      <h1>Portfolio</h1>
+      <ChakraProvider>
+        <Heading>Portfolio</Heading>
+      </ChakraProvider>
     </>
   );
 }
