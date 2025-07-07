@@ -5,8 +5,8 @@ const Navbar = () => {
     <>
       <Container maxW='container.xl'>
         <Box display='flex' justifyContent='space-between' alignItems='center'>
-          <Image mt='-3' src="/logo1.png" height='140px' width='250px' alt='logo'/>
-          <Box display='flex' gap='6' mt='-3'>
+          <Image mt='-3' ml='-70px' src="/logo1.png" height='140px' width='250px' alt='logo'/>
+          <Box display='flex' gap='3' mt='-3'>
             <Button color='#CACCCE' variant='ghost' backgroundColor='black' _hover={{backgroundColor:'black', textDecoration:'underline',textUnderlineOffset:'5px',color:'#56d364'}}>Home</Button>
             <Button color='#CACCCE' variant='ghost' backgroundColor='black' _hover={{backgroundColor:'black', textDecoration:'underline',textUnderlineOffset:'5px',color:'#56d364'}}>About</Button>
             <Button color='#CACCCE' variant='ghost' backgroundColor='black' _hover={{backgroundColor:'black', textDecoration:'underline',textUnderlineOffset:'5px',color:'#56d364'}}>Skills</Button>
