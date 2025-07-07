@@ -1,10 +1,11 @@
-import { ChakraProvider, Heading } from "@chakra-ui/react";
+import { ChakraProvider} from "@chakra-ui/react";
+import Home from "./components/home/Home";
 
 function App() {
   return (
     <>
       <ChakraProvider>
-        <Heading>Portfolio</Heading>
+        <Home />
       </ChakraProvider>
     </>
   );
