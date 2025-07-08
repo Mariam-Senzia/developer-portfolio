@@ -1,19 +1,17 @@
 import {
   Box,
   Button,
-  ButtonGroup,
   Card,
   CardBody,
-  CardFooter,
   Container,
-  Divider,
+  Flex,
   Grid,
   Heading,
   Image,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { FaArrowRight, FaGreaterThan } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Projects = () => {
   const projects = [
@@ -67,14 +65,14 @@ const Projects = () => {
                     </Text>
                   </Stack>
                 </CardBody>
-                <CardFooter>
-                    <Button variant="ghost" color="#669cbf" colorScheme="">
+                <Flex mt="-10px" p="2" mb="15px">
+                    <Button variant="ghost" color="#669cbf" colorScheme="" _hover={{color:""}}>
                       View Project
                     </Button>
                     <Box mt="16px" ml="-8px">
                     <FaArrowRight color="#669cbf" size="10px"/>
                     </Box>
-                </CardFooter>
+                </Flex>
               </Card>
             ))}
           </Grid>
