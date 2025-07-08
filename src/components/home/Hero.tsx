@@ -1,12 +1,34 @@
 import { Box, Button, Container, Flex, Heading, IconButton, Image, Link, Text } from "@chakra-ui/react";
+import Marquee from "react-fast-marquee";
 import { FaDotCircle } from "react-icons/fa";
 import { FaDownload, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Hero = () => {
-  return (
+    const skills = [
+        "Javascript",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "Python",
+        "Flask",
+        "HTML/CSS",
+        "Zustand",
+        "Chakra UI",
+        "Tailwind Css",
+        "MongoDB",
+        "PostgreSql",
+        "WordPress",
+        "Github Actions",
+        "Jenkins",
+        "Docker",
+        "Kubernetes",
+    ]
+    return (
     <>
     <Container maxW="container.xl">
-        <Box display='flex' gap="8">
+        <Box display='flex' gap="8" mt="-20px">
             <Box backgroundColor='#161b22' textAlign="center" p="10" borderRadius="20px" flex="1">
                 <Image src="images/my-image.webp" alt="my-image" height="350px" width="250px" borderRadius="200px" mx="auto" mt="30px"/>
                 <Heading color='white' mt="35px">Mariam Senzia</Heading>
@@ -29,20 +51,28 @@ const Hero = () => {
                     </Link>
                 </Box>
             </Box>
-            <Box display="flex" flexDirection="column" flex="2" gap="8">
+            <Box display="flex" flexDirection="column" flex="2" gap="8" overflow="hidden">
                 <Box backgroundColor='#161b22' borderRadius="20px" p="10">
                     <Text color="#929b8d">Hello There!</Text>
                     <Text color="white" mt="15px" fontSize="3xl">I'm Mariam Senzia, a passionate Full Stack Developer and DevOps Engineer dedicated to building high quality web applications that solve real business problems.</Text>
-                    <Flex mt="20px" gap="2">
+                    <Flex mt="25px" gap="2">
                         <FaDotCircle color="#56d364"/>
-                        <Text color="#929b8d" mt="-2px">Available for Freelancing</Text>
+                        <Text color="#929b8d" mt="-3px">Available for Freelancing</Text>
                     </Flex>
                     <Button as="a" href="docs/Mariam Senzia Resume.pdf" download rightIcon={<FaDownload />} mt="35px" bgColor="#56d364" _hover={{backgroundColor:"#1D8678"}}>
                         Download Resume
                     </Button>
                 </Box>
                 <Box backgroundColor='#161b22' borderRadius="20px" p="10">
-                    <Text color="white" fontSize="2xl">Skills</Text>
+                    <Heading color="white" fontSize="xl">Skills</Heading>
+                    <Marquee>
+                        <Flex gap="5" mt="35px">
+                            {skills.map((item,index) => (
+                                <Button key={index} variant="outline" color="#929b8d" borderColor="white" borderRadius="50px" colorScheme="">{item}</Button>
+                            ))}
+                        </Flex>
+                        <Box minW="20px"></Box>
+                    </Marquee>
                 </Box>
             </Box>
         </Box>
