@@ -29,7 +29,7 @@ const Hero = () => {
     <>
     <Container maxW="container.xl">
         <Box display='flex' gap="8" mt="-20px">
-            <Box backgroundColor='#161b22' textAlign="center" p="10" borderRadius="20px" flex="1">
+            <Box backgroundColor='#161b22' textAlign="center" p="10"  flex="1">
                 <Image src="images/my-image.webp" alt="my-image" height="350px" width="250px" borderRadius="200px" mx="auto" mt="30px"/>
                 <Heading color='white' mt="35px">Mariam Senzia</Heading>
                 <Text color='#969696' mt="10px">I am a Software Developer based in Nairobi, Kenya</Text>

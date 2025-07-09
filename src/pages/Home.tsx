@@ -1,3 +1,4 @@
+import Footer from "../components/home/Footer";
 import Hero from "../components/home/Hero";
 import Navbar from "../components/home/Navbar";
 import Projects from "../components/home/Projects";
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Projects />
       <ReachOut />
+      <Footer />
     </>
   );
 };
