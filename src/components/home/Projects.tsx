@@ -8,6 +8,7 @@ import {
   Grid,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -50,30 +51,34 @@ const Projects = () => {
 
           <Grid templateColumns="repeat(3,1fr)" gap="8" px="40px" py="45px">
             {projects.map((item, index) => (
-              <Card key={index} maxW="xl" variant="outline" borderColor="#26272B" backgroundColor="#161b22" p="0">
-                <CardBody p="0">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    borderRadius="lg"
-                    height="250px"
-                  />
-                  <Stack mt="6" spacing="3" p="5">
-                    <Heading size="md" color="white">{item.title}</Heading>
-                    <Text color="#929b8d">
-                      {item.description}
-                    </Text>
-                  </Stack>
-                </CardBody>
-                <Flex mt="-10px" p="2" mb="15px">
-                    <Button variant="ghost" color="#669cbf" colorScheme="" _hover={{color:""}}>
-                      View Project
-                    </Button>
-                    <Box mt="16px" ml="-8px">
-                    <FaArrowRight color="#669cbf" size="10px"/>
-                    </Box>
-                </Flex>
-              </Card>
+                <Link href="/projectDetails">  
+                    <Card key={index} maxW="xl" variant="outline" borderColor="#26272B" backgroundColor="#121214" p="0" _hover={{
+                        transform: "scale(1.03)"}} transition="all 0.3s ease-in-out" >
+                        <CardBody p="0">
+                        <Image
+                            src={item.image}
+                            alt={item.title}
+                            borderRadius="lg"
+                            borderBottomRadius="0"
+                            height="250px"
+                        />
+                        <Stack mt="6" spacing="3" p="5">
+                            <Heading size="md" color="white">{item.title}</Heading>
+                            <Text color="#929b8d">
+                            {item.description}
+                            </Text>
+                        </Stack>
+                        </CardBody>
+                        <Flex mt="-10px" p="2" mb="15px">
+                            <Button variant="ghost" color="#669cbf" colorScheme="" _hover={{color:"#56d364"}}>
+                            View Project
+                            </Button>
+                            <Box mt="16px" ml="-8px">
+                            <FaArrowRight color="#669cbf" size="10px"/>
+                            </Box>
+                        </Flex>
+                    </Card>
+              </Link>
             ))}
           </Grid>
         </Box>
