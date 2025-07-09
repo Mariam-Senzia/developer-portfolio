@@ -1,5 +1,11 @@
+import Hero from "../components/projectDetails/Hero";
+
 const ProjectDetails = () => {
-  return <div>ProjectDetails</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default ProjectDetails;
