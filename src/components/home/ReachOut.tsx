@@ -1,5 +1,4 @@
 import { Box, Button, Container, Link, Text } from "@chakra-ui/react";
-import { FaDownload } from "react-icons/fa6";
 
 const ReachOut = () => {
   return (
@@ -20,7 +19,7 @@ const ReachOut = () => {
             </Text>
             <Box textAlign="center" mt="25px">
                 <Link href="mailto:mariamsenzia@gmail.com">
-                    <Button bgColor="#56d364" _hover={{backgroundColor:"#1D8678"}} rightIcon={<FaDownload />} mb="55px">
+                    <Button bgColor="#56d364" _hover={{backgroundColor:"#1D8678"}} mb="55px">
                         Let's Talk
                     </Button>
                 </Link>
