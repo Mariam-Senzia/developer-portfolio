@@ -15,7 +15,7 @@ import {
 import { FaArrowRight } from "react-icons/fa6";
 import useProjects from "../../hooks/useProjects";
 
-const Projects = () => {
+const HomeProjects = () => {
   const projects = useProjects();
   
   return (
@@ -70,4 +70,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default HomeProjects;
