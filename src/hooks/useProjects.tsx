@@ -5,9 +5,9 @@ const useProjects = () => {
       title: "DukaNext",
       description:
         "An eCommerce platform that enables shop owners to create, customize and manage their own online stores",
-      fullDescription: "DukaNext is an eCommerce platform that enables shop owners to create, customize, and manage their own online stores. Built using the MERN stack, where I contributed by developing new features, enhancing existing functionality, and improving the overall user experience.",
+      fullDescription: "DukaNext is an eCommerce platform that enables shop owners to create, customize and manage their own online stores. Built using the MERN stack, I contributed by developing new features, enhancing existing functionality, and improving the overall user experience.",
       tools: ["React","Next.js","TypeScript","Express.js","Node.js","MongoDB","BootStrap"],
-      githubLink: "https://github.com/aknjoroge/vastly-ecommerce-dashboard",
+      // githubLink: "https://github.com/aknjoroge/vastly-ecommerce-dashboard",
       liveLink: "https://dukanext.co.ke/",
     },
     {

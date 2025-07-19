@@ -83,7 +83,8 @@ const Hero = () => {
                   </Button>
                 </Link>
 
-                <Link href={selectedProject?.githubLink} target="_blank">
+                {selectedProject?.githubLink && (
+                  <Link href={selectedProject?.githubLink} target="_blank">
                   <Button
                     rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
                     bgColor="#56d364"
@@ -92,6 +93,8 @@ const Hero = () => {
                     Github Link
                   </Button>
                 </Link>
+                )}
+                
               </Flex>
             </Box>
           </Box>
