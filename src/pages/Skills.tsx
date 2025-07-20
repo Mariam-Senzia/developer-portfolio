@@ -1,5 +1,13 @@
+import Navbar from "../components/home/Navbar";
+import SkillsCards from "../components/skills/SkillsCards";
+
 const Skills = () => {
-  return <div>Skills</div>;
+  return (
+    <>
+      <Navbar />
+      <SkillsCards />
+    </>
+  );
 };
 
 export default Skills;
