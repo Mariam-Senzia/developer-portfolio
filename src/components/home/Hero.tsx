@@ -2,6 +2,7 @@ import { Box, Button, Container, Flex, Heading, IconButton, Image, Link, Text } 
 import Marquee from "react-fast-marquee";
 import { FaDotCircle } from "react-icons/fa";
 import { FaDownload, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { AnimationBox } from "../../animations/AnimationBox";
 
 const Hero = () => {
     const skills = [
@@ -16,9 +17,9 @@ const Hero = () => {
         "HTML/CSS",
         "Zustand",
         "Chakra UI",
-        "Tailwind Css",
+        "Tailwind CSS",
         "MongoDB",
-        "PostgreSql",
+        "PostgreSQL",
         "WordPress",
         "Github Actions",
         "Jenkins",
@@ -28,7 +29,7 @@ const Hero = () => {
     return (
     <>
     <Container maxW="container.xl">
-        <Box display='flex' gap="8" mt="100px">
+        <AnimationBox display='flex' gap="8" mt="100px">
             <Box backgroundColor='#161b22' textAlign="center" p="10"  flex="1" borderRadius="20px">
                 <Image src="images/my-image.webp" alt="my-image" height="350px" width="250px" borderRadius="200px" mx="auto" mt="30px"/>
                 <Heading color='white' mt="35px">Mariam Senzia</Heading>
@@ -51,6 +52,7 @@ const Hero = () => {
                     </Link>
                 </Box>
             </Box>
+
             <Box display="flex" flexDirection="column" flex="2" gap="8" overflow="hidden">
                 <Box backgroundColor='#161b22' borderRadius="20px" p="10">
                     <Text color="#929b8d">Hello There!</Text>
@@ -75,7 +77,7 @@ const Hero = () => {
                     </Marquee>
                 </Box>
             </Box>
-        </Box>
+        </AnimationBox>
     </Container>
     </>
   );
