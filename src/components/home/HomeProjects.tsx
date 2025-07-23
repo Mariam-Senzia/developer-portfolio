@@ -1,11 +1,9 @@
 import {
   Box,
   Button,
-  Card,
   CardBody,
   Container,
   Flex,
-  Grid,
   Heading,
   Image,
   Link,
@@ -14,6 +12,8 @@ import {
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa6";
 import useProjects from "../../hooks/useProjects";
+import MotionGrid from "../../animations/MotionGrid";
+import MotionCard from "../../animations/MotionCard";
 
 const HomeProjects = () => {
   const projects = useProjects();
@@ -32,10 +32,10 @@ const HomeProjects = () => {
             and a passion for creating practical web applications.
           </Text>
 
-          <Grid templateColumns="repeat(3,1fr)" gap="8" px="40px" py="45px">
+          <MotionGrid templateColumns="repeat(3,1fr)" gap="8" px="40px" py="45px">
             {projects.map((item, index) => (
                 <Link href={`/projectDetails/${item.title}`}>  
-                    <Card key={index} maxW="xl" variant="outline" borderColor="#26272B" backgroundColor="#121214" p="0" _hover={{
+                    <MotionCard key={index} maxW="xl" variant="outline" borderColor="#26272B" backgroundColor="#121214" p="0" _hover={{
                         transform: "scale(1.03)"}} transition="all 0.3s ease-in-out" >
                         <CardBody p="0">
                         <Image
@@ -60,10 +60,10 @@ const HomeProjects = () => {
                             <FaArrowRight color="#669cbf" size="10px"/>
                             </Box>
                         </Flex>
-                    </Card>
+                    </MotionCard>
               </Link>
             ))}
-          </Grid>
+          </MotionGrid>
         </Box>
       </Container>
     </>
