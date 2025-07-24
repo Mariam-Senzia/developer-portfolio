@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Navbar from "../home/Navbar";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { AnimationBox } from "../../animations/AnimationBox";
 
 const Hero = () => {
   const projects = useProjects();
@@ -26,14 +27,14 @@ const Hero = () => {
     <>
       <Container maxW="container.xl">
         <Navbar />
-        <Box>
+        <AnimationBox>
           <Box mt="100px" borderRadius="20px" height="800px" overflow="hidden">
             <Heading color="white" textAlign="center" pt="30px">
               {selectedProject?.title}
             </Heading>
             <Image mt="50px" src={selectedProject?.image} borderRadius="10px" />
           </Box>
-          <Box display="flex" gap="8">
+          <AnimationBox display="flex" gap="8">
             <Box
               flex="1"
               backgroundColor="#161b22"
@@ -97,8 +98,8 @@ const Hero = () => {
                 
               </Flex>
             </Box>
-          </Box>
-        </Box>
+          </AnimationBox>
+        </AnimationBox>
       </Container>
     </>
   );

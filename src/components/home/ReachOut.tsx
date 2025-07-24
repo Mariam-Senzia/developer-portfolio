@@ -1,10 +1,12 @@
 import { Box, Button, Container, Link, Text } from "@chakra-ui/react";
+import { AnimationBox } from "../../animations/AnimationBox";
 
 const ReachOut = () => {
   return (
     <>
       <Container maxW="container.xl">
         <Box backgroundColor="#161b22" borderRadius="20px" mt="30px">
+          <AnimationBox>
             <Text color="white" fontSize="4xl" textAlign="center" pt="60px">
                 Are You Ready to kickstart your project with
             </Text>
@@ -24,6 +26,7 @@ const ReachOut = () => {
                     </Button>
                 </Link>
             </Box>
+            </AnimationBox>
         </Box>
       </Container>
     </>

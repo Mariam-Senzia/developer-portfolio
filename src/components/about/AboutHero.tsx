@@ -1,11 +1,12 @@
 import { Box, Button, Container, Image, Text } from "@chakra-ui/react";
 import {FaEnvelope} from "react-icons/fa6";
+import { AnimationBox } from "../../animations/AnimationBox";
 
 const AboutHero = () => {
     return (
     <>
     <Container maxW="container.xl">
-        <Box display='flex' gap="8" mt="100px">
+        <AnimationBox display='flex' gap="8" mt="100px">
             <Box backgroundColor='#161b22' p="8"  flex="1" borderRadius="20px">
                 <Image src="images/my-image.webp" alt="my-image" height="350px" width="250px" borderRadius="200px" mx="auto" mt="30px"/>
             </Box>
@@ -21,7 +22,7 @@ const AboutHero = () => {
                         Get in touch
                     </Button>
             </Box>
-        </Box>
+        </AnimationBox>
     </Container>
     </>
   );

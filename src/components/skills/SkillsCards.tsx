@@ -1,6 +1,7 @@
 import { Box, Card, Container, Flex, Grid, Heading, Text} from "@chakra-ui/react"
 import useSkills from "../../hooks/useSkills"
 import { FaArrowRight } from "react-icons/fa6";
+import { AnimationBox } from "../../animations/AnimationBox";
 
 const SkillsCards = () => {
   const skills = useSkills();
@@ -8,10 +9,11 @@ const SkillsCards = () => {
   return (
     <>
         <Container maxW="container.xl">
-            <Box backgroundColor='#161b22' borderRadius="20px" mt="100px" p="10">
+            <AnimationBox backgroundColor='#161b22' borderRadius="20px" mt="100px" p="10">
                 <Heading color="white" textAlign="center" fontSize="3xl">Skills</Heading>
                 <Text textAlign="center" color="#929b8d" mt="10px" fontSize="lg">Technologies I've worked with to build scalable, user-friendly web applications</Text>
 
+                
                 <Grid templateColumns="repeat(3, 1fr)" gap="5" mt="30px">
                     {skills.map((item, index) => (
                         <Card key={index} p="10" variant="outline" borderColor="#3E3E3D" backgroundColor='#161b22' _hover={{ borderColor:"#56d364"}}>
@@ -31,7 +33,7 @@ const SkillsCards = () => {
                         </Card>
                     ))}
                 </Grid>
-            </Box>
+            </AnimationBox>
         </Container>
     </>
   )
