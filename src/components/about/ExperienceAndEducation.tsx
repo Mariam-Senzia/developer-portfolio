@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Flex, IconButton, ListItem, Text, UnorderedList } from "@chakra-ui/react"
+import { Box, Container, Divider, IconButton, ListItem, Text, UnorderedList } from "@chakra-ui/react"
 import useExperience from "../../hooks/useExperience"
 import useEducation from "../../hooks/useEducation";
 import { FaLaptopCode, FaQuoteRight } from "react-icons/fa6";
@@ -13,7 +13,7 @@ const ExperienceAndEducation = () => {
     <>
     <Container maxW="container.xl">
         <AnimationBox>
-            <Box display="flex" gap="8" mt="30px">
+            <Box display={{base: "block", md: "flex"}} gap="8" mt="30px">
                 <Box flex="3" backgroundColor="#161b22" borderRadius="20px" p="10" >
                     <Text color="white" fontSize="2xl" fontWeight="bold">Experience</Text>
 
@@ -27,22 +27,22 @@ const ExperienceAndEducation = () => {
 
                             <Box>
                                 <Text color="#929b8d">{exp.date}</Text>
-                                <Flex gap="2" mt="10px">
+                                <Box display={{base: "block", md: "flex"}} gap="2" mt="10px">
                                     <Text color="white" fontSize="lg">{exp.title},</Text>
                                     <Text color="white" fontSize="lg">{exp.company}</Text>
-                                </Flex>
+                                </Box>
                                 {exp.roles.map((item, index) => (
                                     <UnorderedList key={index} mt="15px">
                                         <ListItem color="#929b8d">{item}</ListItem>
                                     </UnorderedList>
                                 ))}
-                                <Divider mt="40px" /> 
+                                <Divider mt="35px" /> 
                             </Box>      
                         </Box>
                     ))};
                 </Box>
 
-                <Box flex="2">
+                <Box mt={{base: "30px", md: "0"}} flex="2">
                     <Box backgroundColor="#161b22" borderRadius="20px" p="10">
                         <Text color="white" fontSize="2xl" fontWeight="bold">Education</Text>
 
@@ -70,7 +70,7 @@ const ExperienceAndEducation = () => {
                             <FaQuoteLeft color="white" />
                         </Box>
                         <Text color="white" mt="5px" ml="15px" mb="5px" fontStyle="italic" fontSize="xl">
-                            I don&apos;t just build features - I build experiences that work, scale and evolve with users.My focus is on writing clean code, creating impact and continuously growing as a developer.
+                            I build experiences that work, scale and evolve with users with a focus on writing clean code, creating impact and continuously growing as a developer.
                         </Text>
                         <Box alignSelf="end">
                             <FaQuoteRight color="white" />

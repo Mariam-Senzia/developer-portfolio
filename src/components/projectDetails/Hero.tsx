@@ -28,24 +28,24 @@ const Hero = () => {
       <Container maxW="container.xl">
         <Navbar />
         <AnimationBox>
-          <Box mt="100px" borderRadius="20px" height="800px" overflow="hidden">
+          <Box mt="100px" borderRadius="20px" height={{base: "", md: "800px"}} overflow="hidden">
             <Heading color="white" textAlign="center" pt="30px">
               {selectedProject?.title}
             </Heading>
             <Image mt="50px" src={selectedProject?.image} borderRadius="10px" />
           </Box>
-          <AnimationBox display="flex" gap="8">
+          <AnimationBox display={{base: "block", md: "flex"}} gap="8">
             <Box
               flex="1"
               backgroundColor="#161b22"
               borderRadius="20px"
-              mt="30px"
+              mt={{base: "30px", md: "30px"}}
               p="10"
             >
               <Heading color="white" fontSize="xl" mb="20x">
                 Tools
               </Heading>
-              <SimpleGrid columns={3} gap="3" mt="20px">
+              <SimpleGrid columns={{base: 2, md: 3}} gap="3" mt="20px">
                 {selectedProject?.tools.map((item) => (
                   <Button
                     variant="outline"

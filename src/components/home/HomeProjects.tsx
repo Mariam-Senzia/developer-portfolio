@@ -32,7 +32,7 @@ const HomeProjects = () => {
             and a passion for creating practical web applications.
           </Text>
 
-          <MotionGrid templateColumns="repeat(3,1fr)" gap="8" px="40px" py="45px">
+          <MotionGrid templateColumns={{base: "repeat(1,1fr)", md: "repeat(3,1fr)"}} gap="8" px="40px" py="45px">
             {projects.map((item, index) => (
                 <Link href={`/projectDetails/${item.title}`}>  
                     <MotionCard key={index} maxW="xl" variant="outline" borderColor="#26272B" backgroundColor="#121214" p="0" _hover={{

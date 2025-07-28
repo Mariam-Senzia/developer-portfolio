@@ -14,7 +14,7 @@ const SkillsCards = () => {
                 <Text textAlign="center" color="#929b8d" mt="10px" fontSize="lg">Technologies I've worked with to build scalable, user-friendly web applications</Text>
 
                 
-                <Grid templateColumns="repeat(3, 1fr)" gap="5" mt="30px">
+                <Grid templateColumns={{base: "repeat(1, 1fr)", md: "repeat(3, 1fr)"}} gap="5" mt="30px">
                     {skills.map((item, index) => (
                         <Card key={index} p="10" variant="outline" borderColor="#3E3E3D" backgroundColor='#161b22' _hover={{ borderColor:"#56d364"}}>
                             <Box>

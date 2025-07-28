@@ -29,7 +29,7 @@ const Hero = () => {
     return (
     <>
     <Container maxW="container.xl">
-        <AnimationBox display='flex' gap="8" mt="100px">
+        <AnimationBox display={{base: "block", md: "flex"}} gap="8" mt="100px">
             <Box backgroundColor='#161b22' textAlign="center" p="10"  flex="1" borderRadius="20px">
                 <Image src="images/my-image.webp" alt="my-image" height="350px" width="250px" borderRadius="200px" mx="auto" mt="30px"/>
                 <Heading color='white' mt="35px">Mariam Senzia</Heading>
@@ -53,7 +53,7 @@ const Hero = () => {
                 </Box>
             </Box>
 
-            <Box display="flex" flexDirection="column" flex="2" gap="8" overflow="hidden">
+            <Box mt={{base: "30px", md: "0"}} display="flex" flexDirection="column" flex="2" gap="8" overflow="hidden">
                 <Box backgroundColor='#161b22' borderRadius="20px" p="10">
                     <Text color="#929b8d">Hello There!</Text>
                     <Text color="white" mt="15px" fontSize="3xl">I'm Mariam Senzia, a passionate Full Stack Developer and DevOps Engineer dedicated to building high quality web applications that solve real business problems.</Text>

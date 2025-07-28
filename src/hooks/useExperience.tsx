@@ -3,12 +3,12 @@ const useExperience = () => {
         {
             date: "July 2025 - Present",
             company: "Kapu Digital",
-            title: "FrontEnd Developer",
+            title: "Full Stack Developer",
             roles: [
-                "Own and implement core features across projects.",
-                "Lead UI improvements and refactor legacy code.",
-                "Collaborate with designers, backend developers and stakeholders.",
-                "Improve performance, accessibility and support onboarding.",
+                "Build responsive user interfaces with frameworks like React, Next.js and WordPress.",
+                "Develop and maintain scalable backend systems with Node.js and Express.",
+                "Manage databases like MongoDB and PostgreSQL, ensuring efficient data storage",
+                "Collaborate on end-to-end product features, from concept to deployment.",
             ],
         },
         {

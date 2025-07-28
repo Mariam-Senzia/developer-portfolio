@@ -16,7 +16,7 @@ const ReachOut = () => {
             <Text color="#929b8d" textAlign="center" mt="15px" fontSize="lg">
                 Reach out and lets make it happpen. I'm also available for full-time or part-time opportunities
             </Text>
-            <Text color="#929b8d" textAlign="center" mt="" fontSize="lg">
+            <Text color="#929b8d" textAlign="center" fontSize="lg">
                 where I can push the limits of code and deliver exceptional work.
             </Text>
             <Box textAlign="center" mt="25px">
