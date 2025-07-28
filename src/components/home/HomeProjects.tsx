@@ -35,7 +35,7 @@ const HomeProjects = () => {
           <MotionGrid templateColumns={{base: "repeat(1,1fr)", md: "repeat(3,1fr)"}} gap="8" px="40px" py="45px">
             {projects.map((item, index) => (
                 <Link href={`/projectDetails/${item.title}`}>  
-                    <MotionCard key={index} maxW="xl" variant="outline" borderColor="#26272B" backgroundColor="#121214" p="0" _hover={{
+                    <MotionCard key={index} maxW="xl" height="100%" variant="outline" borderColor="#26272B" backgroundColor="#121214" p="0" _hover={{
                         transform: "scale(1.03)"}} transition="all 0.3s ease-in-out" >
                         <CardBody p="0">
                         <Image

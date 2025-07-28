@@ -28,7 +28,7 @@ const Hero = () => {
       <Container maxW="container.xl">
         <Navbar />
         <AnimationBox>
-          <Box mt="100px" borderRadius="20px" height={{base: "", md: "800px"}} overflow="hidden">
+          <Box mt="100px" borderRadius="20px" height={{base: "",md: "", lg: "800px"}} overflow="hidden">
             <Heading color="white" textAlign="center" pt="30px">
               {selectedProject?.title}
             </Heading>
@@ -45,7 +45,7 @@ const Hero = () => {
               <Heading color="white" fontSize="xl" mb="20x">
                 Tools
               </Heading>
-              <SimpleGrid columns={{base: 2, md: 3}} gap="3" mt="20px">
+              <SimpleGrid columns={{base: 2, lg: 3}} gap="3" mt="20px">
                 {selectedProject?.tools.map((item) => (
                   <Button
                     variant="outline"
