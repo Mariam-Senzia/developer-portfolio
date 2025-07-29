@@ -14,6 +14,7 @@ import {
 import Navbar from "../home/Navbar";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { AnimationBox } from "../../animations/AnimationBox";
+import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   const projects = useProjects();
@@ -72,7 +73,7 @@ const Hero = () => {
               <Text color="white" mt="20px">
                 {selectedProject?.fullDescription}
               </Text>
-              <Flex mt="20px" gap="5">
+              <Box display={{base: "block",md: "flex"}} mt="20px" gap="5">
                 <Link href={selectedProject?.liveLink} target="_blank">
                   <Button
                     rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
@@ -90,15 +91,55 @@ const Hero = () => {
                     rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
                     bgColor="#56d364"
                     _hover={{ backgroundColor: "#1D8678" }}
+                    ml={{base: "7px", md: "0px"}}
                   >
                     Github Link
                   </Button>
                 </Link>
                 )}
+
+                {selectedProject?.storeFrontOne && (
+                  <Link href={selectedProject?.storeFrontOne} target="_blank">
+                    <Button
+                      rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
+                      bgColor="#56d364"
+                      _hover={{ backgroundColor: "#1D8678" }}
+                      mt={{base: "20px", md: "0px"}}
+                    >
+                      View Storefront 1
+                    </Button>
+                  </Link>
+                )}
+
+                {selectedProject?.storeFrontTwo && (
+                  <Link href={selectedProject?.storeFrontTwo} target="_blank">
+                  <Button
+                    rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
+                    bgColor="#56d364"
+                    _hover={{ backgroundColor: "#1D8678" }}
+                    mt={{base: "20px", md: "0px"}}
+                  >
+                    View Storefront 2
+                  </Button>
+                  </Link>
+                )}
                 
-              </Flex>
+              </Box>
             </Box>
           </AnimationBox>
+
+          <Box backgroundColor="#161b22" borderRadius="20px" mt="30px"p="10">
+            <Heading color="white" fontSize="xl" mb="10px">Deliverables</Heading>
+
+            <AnimationBox>
+            {selectedProject?.deliverables.map((del, index) => (
+              <Flex key={index} color="#929b8d" gap="2" alignItems="center" mt="20px">
+                <FaArrowRight />
+                <Text>{del}</Text>
+                </Flex>
+              ))}
+            </AnimationBox>
+          </Box>
         </AnimationBox>
       </Container>
     </>
