@@ -31,7 +31,7 @@ const Hero = () => {
     <Container maxW="container.xl">
         <AnimationBox display={{base: "block", md: "flex"}} gap="8" mt="100px">
             <Box backgroundColor='#161b22' textAlign="center" p="10"  flex="1" borderRadius="20px">
-                <Image src="./images/portfolio-image.jpg" alt="my-image" height="300px" width="300px" borderRadius="200px" mx="auto" mt="30px"/>
+                <Image src="/images/portfolio-image.jpg" alt="my-image" height="300px" width="300px" borderRadius="200px" mx="auto" mt="30px"/>
                 <Heading color='white' mt="35px">Mariam Senzia</Heading>
                 <Text color='#969696' mt="10px">I am a Software Developer based in Nairobi, Kenya</Text>
                 <Box display="flex" gap="5" mt="20px" justifyContent="center">

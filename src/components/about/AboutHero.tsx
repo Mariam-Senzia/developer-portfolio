@@ -8,7 +8,7 @@ const AboutHero = () => {
     <Container maxW="container.xl">
         <AnimationBox display={{base: "block", md: "flex"}} gap="8" mt="100px">
             <Box backgroundColor='#161b22' p="8"  flex="1" borderRadius="20px" display="flex" alignItems="center">
-                <Image src="./images/portfolio-image.jpg" alt="my-image" height="350px" width="350px" borderRadius="200px" mx="auto"/>
+                <Image src="/images/portfolio-image.jpg" alt="my-image" height="350px" width="350px" borderRadius="200px" mx="auto"/>
             </Box>
 
             <Box mt={{base: "30px", md: "0"}} flex="2" backgroundColor='#161b22' borderRadius="20px" p="8" overflow="hidden">
