@@ -1,4 +1,4 @@
-import { Box, Button, Container, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Image, Link, Text } from "@chakra-ui/react";
 import {FaEnvelope} from "react-icons/fa6";
 import { AnimationBox } from "../../animations/AnimationBox";
 
@@ -18,9 +18,11 @@ const AboutHero = () => {
                     <Text color="#929b8d" fontSize="lg" mt="20px">
                         I work well both independently and in collaborative environments and value clear communication and continuous growth. I care about doing meaningful work, building reliable solutions and contributing to projects that prioritize quality, learning and impact.
                     </Text>
-                    <Button as="a" href="docs/Mariam Senzia Resume.pdf" download rightIcon={<FaEnvelope />} mt="35px" bgColor="#56d364" _hover={{backgroundColor:"#1D8678"}}>
-                        Get in touch
-                    </Button>
+                    <Link href="mailto:mariamsenzia@gmail.com">
+                        <Button rightIcon={<FaEnvelope />} mt="35px" bgColor="#56d364" _hover={{backgroundColor:"#1D8678"}}>
+                            Get in touch
+                        </Button>
+                    </Link>
             </Box>
         </AnimationBox>
     </Container>
