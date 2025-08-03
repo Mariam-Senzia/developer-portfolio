@@ -14,6 +14,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import useProjects from "../../hooks/useProjects";
 import MotionGrid from "../../animations/MotionGrid";
 import MotionCard from "../../animations/MotionCard";
+import { AnimationBox } from "../../animations/AnimationBox";
 
 const HomeProjects = () => {
   const projects = useProjects();
@@ -21,7 +22,7 @@ const HomeProjects = () => {
   return (
     <>
       <Container maxW="container.xl">
-        <Box backgroundColor="#161b22" borderRadius="20px" mt="30px">
+        <AnimationBox backgroundColor="#161b22" borderRadius="20px" mt="30px">
           <Heading color="white" textAlign="center" pt="35px">
             Projects
           </Heading>
@@ -64,7 +65,7 @@ const HomeProjects = () => {
               </Link>
             ))}
           </MotionGrid>
-        </Box>
+        </AnimationBox>
       </Container>
     </>
   );
