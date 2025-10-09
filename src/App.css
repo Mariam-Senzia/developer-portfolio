@@ -1,0 +1,4 @@
+.chakra-modal__content-container {
+  display: flex !important;
+  align-items: center !important;
+}

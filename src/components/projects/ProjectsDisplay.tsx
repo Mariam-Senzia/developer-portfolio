@@ -16,12 +16,12 @@ import MotionGrid from "../../animations/MotionGrid";
 import MotionCard from "../../animations/MotionCard";
 import { AnimationBox } from "../../animations/AnimationBox";
 
-const HomeProjects = () => {
+const ProjectDisplay = () => {
   const projects = useProjects();
 
   return (
     <>
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" mt="100px">
         <AnimationBox backgroundColor="#161b22" borderRadius="20px" mt="30px">
           <Heading color="white" textAlign="center" pt="35px">
             Projects
@@ -39,7 +39,7 @@ const HomeProjects = () => {
             px="40px"
             py="45px"
           >
-            {projects.slice(0, 3).map((item, index) => (
+            {projects.map((item, index) => (
               <Link href={`/projectDetails/${item.title}`}>
                 <MotionCard
                   key={index}
@@ -92,4 +92,4 @@ const HomeProjects = () => {
   );
 };
 
-export default HomeProjects;
+export default ProjectDisplay;
