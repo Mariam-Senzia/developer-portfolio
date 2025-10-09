@@ -19,8 +19,8 @@ const useProjects = () => {
         "Puck",
       ],
       liveLink: "https://dukanext.co.ke/",
-      storeFrontOne: "https://zia.dukanext.co.ke/",
-      storeFrontTwo: "https://carpockets.dukanext.co.ke/",
+      storeFrontOne: "https://shop.ngemihomecoming.ke/",
+      storeFrontTwo: "https://blaqfiti.co.ke/",
       deliverables: [
         "Built responsive and user-friendly components using React and Next.js",
         "Enhanced the admin dashboard with new features and improved form components",
