@@ -32,6 +32,24 @@ const useProjects = () => {
     },
     {
       id: 2,
+      image: "/projects/Bright-Star-UI.png",
+      title: "Bright Star",
+      description:
+        "A professional cleaning and pest control service offering reliable, affordable, and eco-friendly solutions for homes and offices.",
+      fullDescription:
+        "Bright Star is a professional cleaning and pest control company based in Busia that provides reliable, affordable, and eco-friendly cleaning solutions for homes and offices. The platform highlights the company’s services, showcasing their commitment to professionalism, trained staff, and sustainable cleaning practices. Built with a clean, modern UI, the project focuses on effectively presenting their brand, services, and values to potential clients.",
+      tools: ["Next.js", "TypeScript", "ChakraUI"],
+      githubLink: "https://github.com/Mariam-Senzia/bright-star",
+      liveLink: "https://bright-star-eta.vercel.app/",
+      deliverables: [
+        "Developed a responsive and professional cleaning & pest control platform using Next.js and TypeScript",
+        "Designed a clean and accessible user interface with Chakra UI for consistent styling and layout",
+        "Implemented custom React hooks to manage reusable logic across service and contact sections",
+        "Utilized Next.js Server-Side Rendering (SSR) for optimized performance and faster page loading",
+      ],
+    },
+    {
+      id: 3,
       image: "/projects/BlogNest-UI.png",
       title: "BlogNest",
       description:
@@ -58,7 +76,7 @@ const useProjects = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       image: "/projects/Omnifood-UI.png",
       title: "Omnifood",
       description:
@@ -78,7 +96,7 @@ const useProjects = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       image: "/projects/Safiri-Africa-UI.png",
       title: "Safiri Africa",
       description:

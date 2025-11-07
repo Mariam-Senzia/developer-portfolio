@@ -59,6 +59,8 @@ const Hero = () => {
                     borderRadius="50px"
                     borderColor="white"
                     colorScheme=""
+                    maxWidth="100%"
+                    cursor="default"
                   >
                     {item}
                   </Button>
@@ -84,7 +86,11 @@ const Hero = () => {
                     rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
                     alignItems="center"
                     bgColor="#56d364"
-                    _hover={{ backgroundColor: "#1D8678" }}
+                    transition=" all 0.3s ease-in-out"
+                    _hover={{
+                      backgroundColor: "#46ad52",
+                      transform: "translateY(-0.1rem)",
+                    }}
                   >
                     Live Link
                   </Button>
@@ -94,7 +100,11 @@ const Hero = () => {
                     <Button
                       rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
                       bgColor="#56d364"
-                      _hover={{ backgroundColor: "#1D8678" }}
+                      transition=" all 0.3s ease-in-out"
+                      _hover={{
+                        backgroundColor: "#46ad52",
+                        transform: "translateY(-0.2rem)",
+                      }}
                       ml={{ base: "7px", md: "0px" }}
                     >
                       Github Link
@@ -106,7 +116,11 @@ const Hero = () => {
                     <Button
                       rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
                       bgColor="#56d364"
-                      _hover={{ backgroundColor: "#1D8678" }}
+                      transition=" all 0.3s ease-in-out"
+                      _hover={{
+                        backgroundColor: "#46ad52",
+                        transform: "translateY(-0.2rem)",
+                      }}
                       mt={{ base: "20px", md: "0px" }}
                     >
                       Ngemi Homecoming Store
@@ -119,7 +133,11 @@ const Hero = () => {
                     <Button
                       rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
                       bgColor="#56d364"
-                      _hover={{ backgroundColor: "#1D8678" }}
+                      transition=" all 0.3s ease-in-out"
+                      _hover={{
+                        backgroundColor: "#46ad52",
+                        transform: "translateY(-0.2rem)",
+                      }}
                       mt={{ base: "20px", md: "0px" }}
                     >
                       Blaqfiti Store
