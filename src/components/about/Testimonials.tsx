@@ -11,7 +11,7 @@ const Testimonials = () => {
         <Box
           backgroundColor="#161b22"
           borderRadius="20px"
-          p="10"
+          p={{ base: "6", md: "10" }}
           mt="30px"
           textAlign="center"
         >
@@ -21,7 +21,7 @@ const Testimonials = () => {
             </Text>
 
             {testimonials.map((item, index) => (
-              <Box key={index} mt="30px" mx={{base: "", md: "20" }}>
+              <Box key={index} mt="30px" mx={{ base: "", md: "20" }}>
                 <Avatar src={item.image} />
                 <Text color="#929b8d" fontSize="lg" mt="20px">
                   {item.testimonial}
@@ -29,7 +29,11 @@ const Testimonials = () => {
                 <Text color="white" fontSize="lg" mt="20px">
                   {item.name}
                 </Text>
-                <Box display={{base: "block", md: "flex"}} gap="2" justifyContent="center">
+                <Box
+                  display={{ base: "block", md: "flex" }}
+                  gap="2"
+                  justifyContent="center"
+                >
                   <Text color="#929b8d" fontSize="lg">
                     {item.position},
                   </Text>

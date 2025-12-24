@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Heading,
   IconButton,
   Link,
@@ -19,14 +20,16 @@ const OpenSource = () => {
         backgroundColor="#161b22"
         borderRadius="20px"
         mt="30px"
-        p="10"
+        p={{ base: "6", md: "10" }}
       >
         <Heading color="white" textAlign="center" fontSize="3xl" mt="10px">
           Open Source Contribution
         </Heading>
 
-        <Box display="flex" gap="5" mt="15px">
-          <Box>
+        <Divider display={{ base: "block", md: "none" }} mt="10px" />
+
+        <Box display={{ base: "block", md: "flex" }} gap="5" mt="15px">
+          <Box display={{ base: "none", md: "flex" }}>
             <IconButton aria-label="coding laptop" bgColor="white">
               <FaTools color="#56d364" fontSize="20px" />
             </IconButton>

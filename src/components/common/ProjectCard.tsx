@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   CardBody,
   Flex,
@@ -32,7 +31,8 @@ export default function ProjectCard({ item, index }: ProjectsCardProps) {
           maxW="xl"
           height="100%"
           variant="outline"
-          borderColor="#26272B"
+          // borderColor="#26272B"
+          borderColor="#222"
           backgroundColor="#121214"
           p="0"
           _hover={{
@@ -47,7 +47,8 @@ export default function ProjectCard({ item, index }: ProjectsCardProps) {
               objectFit="cover"
               borderRadius="lg"
               borderBottomRadius="0"
-              height="250px"
+              width="100%"
+              height={{ base: "160px", md: "250px" }}
             />
             <Stack mt="6" spacing="3" p="5">
               <Heading size="md" color="white">
@@ -58,6 +59,7 @@ export default function ProjectCard({ item, index }: ProjectsCardProps) {
           </CardBody>
           <Flex mt="-10px" p="2" mb="15px">
             <Button
+              rightIcon={<FaArrowRight color="#669cbf" size="10px" />}
               variant="ghost"
               color="#669cbf"
               colorScheme=""
@@ -65,9 +67,6 @@ export default function ProjectCard({ item, index }: ProjectsCardProps) {
             >
               View Project
             </Button>
-            <Box mt="16px" ml="-8px">
-              <FaArrowRight color="#669cbf" size="10px" />
-            </Box>
           </Flex>
         </MotionCard>
       </Link>

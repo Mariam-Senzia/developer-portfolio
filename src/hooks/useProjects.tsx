@@ -22,34 +22,17 @@ const useProjects = () => {
       storeFrontOne: "https://shop.ngemihomecoming.ke/",
       storeFrontTwo: "https://blaqfiti.co.ke/",
       deliverables: [
-        "Built responsive and user-friendly components using React and Next.js",
-        "Enhanced the admin dashboard with new features and improved form components",
-        "Improved product listing, search functionality and cart experience",
-        "Customized and integrated the Puck theme builder to allow users to create and manage their own themes",
-        "Enhanced API integration and error handling between frontend and backend",
-        "Refactored UI elements to boost performance and mobile responsiveness",
+        "Built responsive storefront and admin interfaces using React and Next.js, ensuring consistent user experience across desktop and mobile devices",
+        "Implemented an AI-powered product description generator, saving merchants 5 to 10 minutes per product through reusable AI suggestions and custom prompts",
+        "Integrated Puck theme builder, enabling merchants to create personalized storefront themes instead of relying on a single default layout, reducing setup time and increasing design flexibility",
+        "Developed drag-and-drop image reordering feature using DND Kit, reducing product setup time by 40% and giving merchants intuitive control over product image presentation",
+        "Implemented cart, wishlist, product listing and search functionality, improving shopping flow and user engagement across diverse product types",
+        "Built order preview modals and enhanced admin dashboard with billing invoices and receipts, integrating frontend and backend APIs to ensure accurate records and reduce order processing errors",
+        "Improved platform reliability with error handling, alerts, and 404 pages, reducing support requests by implementing user-friendly fallback states",
       ],
     },
     {
       id: 2,
-      image: "/projects/Bright-Star-UI.png",
-      title: "Bright Star",
-      description:
-        "A professional cleaning and pest control service offering reliable, affordable, and eco-friendly solutions for homes and offices.",
-      fullDescription:
-        "Bright Star is a professional cleaning and pest control company based in Busia that provides reliable, affordable, and eco-friendly cleaning solutions for homes and offices. The platform highlights the company’s services, showcasing their commitment to professionalism, trained staff, and sustainable cleaning practices. Built with a clean, modern UI, the project focuses on effectively presenting their brand, services, and values to potential clients.",
-      tools: ["Next.js", "TypeScript", "ChakraUI"],
-      githubLink: "https://github.com/Mariam-Senzia/bright-star",
-      liveLink: "https://bright-star-eta.vercel.app/",
-      deliverables: [
-        "Developed a responsive and professional cleaning & pest control platform using Next.js and TypeScript",
-        "Designed a clean and accessible user interface with Chakra UI for consistent styling and layout",
-        "Implemented custom React hooks to manage reusable logic across service and contact sections",
-        "Utilized Next.js Server-Side Rendering (SSR) for optimized performance and faster page loading",
-      ],
-    },
-    {
-      id: 3,
       image: "/projects/BlogNest-UI.png",
       title: "BlogNest",
       description:
@@ -73,6 +56,24 @@ const useProjects = () => {
         "Designed and implemented MongoDB schemas for blogs, users, and categories",
         "Created protected routes for publishing posts",
         "Built responsive UI with React",
+      ],
+    },
+    {
+      id: 3,
+      image: "/projects/Bright-Star-UI.png",
+      title: "Bright Star",
+      description:
+        "A professional cleaning and pest control service offering reliable, affordable, and eco-friendly solutions for homes and offices.",
+      fullDescription:
+        "Bright Star is a professional cleaning and pest control company based in Busia that provides reliable, affordable, and eco-friendly cleaning solutions for homes and offices. The platform highlights the company’s services, showcasing their commitment to professionalism, trained staff, and sustainable cleaning practices. Built with a clean, modern UI, the project focuses on effectively presenting their brand, services, and values to potential clients.",
+      tools: ["Next.js", "TypeScript", "ChakraUI"],
+      githubLink: "https://github.com/Mariam-Senzia/bright-star",
+      liveLink: "https://bright-star-eta.vercel.app/",
+      deliverables: [
+        "Developed a responsive and professional cleaning & pest control platform using Next.js and TypeScript",
+        "Designed a clean and accessible user interface with Chakra UI for consistent styling and layout",
+        "Implemented custom React hooks to manage reusable logic across service and contact sections",
+        "Utilized Next.js Server-Side Rendering (SSR) for optimized performance and faster page loading",
       ],
     },
     {

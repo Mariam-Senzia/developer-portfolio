@@ -15,18 +15,22 @@ const HomeProjects = () => {
           <Heading color="white" textAlign="center" pt="35px">
             Projects
           </Heading>
-          <Text color="#929b8d" textAlign="center" mt="15px" fontSize="lg">
-            A glimpse into what I&apos;ve been building, driven by curiosity
-          </Text>
-          <Text color="#929b8d" textAlign="center" mt="" fontSize="lg">
-            and a passion for creating practical web applications.
+          <Text
+            color="#929b8d"
+            textAlign="center"
+            mt="15px"
+            fontSize="lg"
+            px={{ base: "0.5rem", lg: "24rem" }}
+          >
+            A glimpse into what I&apos;ve been building, driven by curiosity and
+            a passion for creating practical web applications
           </Text>
 
           <MotionGrid
             templateColumns={{ base: "repeat(1,1fr)", md: "repeat(3,1fr)" }}
             gap="8"
-            px="40px"
-            py="45px"
+            px={{ base: "15px", md: "40px" }}
+            py={{ base: "25px", md: "45px" }}
           >
             {projects.slice(0, 3).map((item, index) => (
               <ProjectCard item={item} index={index} />

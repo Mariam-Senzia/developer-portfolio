@@ -47,16 +47,17 @@ const Hero = () => {
           <Box
             backgroundColor="#161b22"
             textAlign="center"
-            p="10"
+            p={{ base: "6", md: "10" }}
             flex="1"
             borderRadius="20px"
           >
             <Image
               src="/images/portfolio-image.jpg"
               alt="my-image"
-              height="300px"
-              width="300px"
+              height={{ base: "250px", md: "300px" }}
+              width={{ base: "250px", md: "300px" }}
               borderRadius="200px"
+              objectFit="cover"
               mx="auto"
               mt="30px"
             />
@@ -73,7 +74,8 @@ const Hero = () => {
                   variant="outline"
                   borderColor="#353E45"
                   color="#56d364"
-                  _hover={{ color: "#56d364" }}
+                  transition="all .2s"
+                  _hover={{ color: "#56d364", transform: "scale(1.08)" }}
                 >
                   <FaGithub size="20px" />
                 </IconButton>
@@ -87,7 +89,7 @@ const Hero = () => {
                   variant="outline"
                   borderColor="#353E45"
                   color="#56d364"
-                  _hover={{ color: "#56d364" }}
+                  _hover={{ color: "#56d364", transform: "scale(1.08)" }}
                 >
                   <FaLinkedin size="20px" />
                 </IconButton>
@@ -98,7 +100,11 @@ const Hero = () => {
                   variant="outline"
                   borderColor="#353E45"
                   color="#56d364"
-                  _hover={{ color: "#56d364" }}
+                  transition="all .2s"
+                  _hover={{
+                    color: "#56d364",
+                    transform: "scale(1.08)",
+                  }}
                 >
                   <FaEnvelope size="20px" />
                 </IconButton>
@@ -114,9 +120,17 @@ const Hero = () => {
             gap="8"
             overflow="hidden"
           >
-            <Box backgroundColor="#161b22" borderRadius="20px" p="10">
+            <Box
+              backgroundColor="#161b22"
+              borderRadius="20px"
+              p={{ base: "6", md: "10" }}
+            >
               <Text color="#929b8d">Hello There!</Text>
-              <Text color="white" mt="15px" fontSize="3xl">
+              <Text
+                color="white"
+                mt="15px"
+                fontSize={{ base: "2xl", md: "3xl" }}
+              >
                 I'm Mariam Senzia, a passionate Full Stack Developer and DevOps
                 Engineer dedicated to building high quality web applications
                 that solve real business problems.
@@ -143,11 +157,15 @@ const Hero = () => {
                 Download Resume
               </Button>
             </Box>
-            <Box backgroundColor="#161b22" borderRadius="20px" p="10">
+            <Box
+              backgroundColor="#161b22"
+              borderRadius="20px"
+              p={{ base: "6", md: "10" }}
+            >
               <Heading color="white" fontSize="xl">
                 Skills
               </Heading>
-              <Marquee>
+              <Marquee pauseOnHover={true}>
                 <Flex gap="5" mt="35px">
                   {skills.map((item, index) => (
                     <Button

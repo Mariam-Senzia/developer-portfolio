@@ -7,19 +7,27 @@ const ReachOut = () => {
       <Container maxW="container.xl">
         <Box backgroundColor="#161b22" borderRadius="20px" mt="30px">
           <AnimationBox>
-            <Text color="white" fontSize="4xl" textAlign="center" pt="60px">
-              Are You Ready to kickstart your project with
+            <Text
+              color="white"
+              fontSize={{ base: "3xl", md: "4xl" }}
+              textAlign="center"
+              pt="60px"
+              px={{ base: "0.5rem", lg: "17rem" }}
+            >
+              Are You Ready to kickstart your project with a touch of magic?
             </Text>
-            <Text color="white" fontSize="4xl" textAlign="center" mt="-5px">
-              a touch of magic?
-            </Text>
-            <Text color="#929b8d" textAlign="center" mt="15px" fontSize="lg">
+            <Text
+              color="#929b8d"
+              textAlign="center"
+              mt="15px"
+              fontSize="lg"
+              px={{ base: "1rem", lg: "15rem" }}
+            >
               Reach out and lets make it happpen. I'm also available for
-              full-time or part-time opportunities
+              full-time or part-time opportunities where I can push the limits
+              of code and deliver exceptional work.
             </Text>
-            <Text color="#929b8d" textAlign="center" fontSize="lg">
-              where I can push the limits of code and deliver exceptional work.
-            </Text>
+
             <Box textAlign="center" mt="25px">
               <Link href="mailto:mariamsenzia@gmail.com">
                 <Button

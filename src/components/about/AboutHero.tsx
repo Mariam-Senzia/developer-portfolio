@@ -13,7 +13,7 @@ const AboutHero = () => {
         >
           <Box
             backgroundColor="#161b22"
-            p="8"
+            p={{ base: "6", md: "8" }}
             flex="1"
             borderRadius="20px"
             display="flex"
@@ -22,8 +22,8 @@ const AboutHero = () => {
             <Image
               src="/images/portfolio-image.jpg"
               alt="my-image"
-              height="350px"
-              width="350px"
+              height={{ base: "250px", md: "350px" }}
+              width={{ base: "250px", md: "350px" }}
               borderRadius="200px"
               mx="auto"
             />
@@ -34,10 +34,10 @@ const AboutHero = () => {
             flex="2"
             backgroundColor="#161b22"
             borderRadius="20px"
-            p="8"
+            p={{ base: "6", md: "8" }}
             overflow="hidden"
           >
-            <Text color="white" mt="15px" fontSize="3xl">
+            <Text color="white" mt="15px" fontSize={{ base: "2xl", md: "3xl" }}>
               I'm Mariam Senzia, a passionate Full Stack Developer and DevOps
               Engineer.
             </Text>

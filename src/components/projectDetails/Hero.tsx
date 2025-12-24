@@ -46,7 +46,7 @@ const Hero = () => {
               backgroundColor="#161b22"
               borderRadius="20px"
               mt={{ base: "30px", md: "30px" }}
-              p="10"
+              p={{ base: "6", lg: "10" }}
             >
               <Heading color="white" fontSize="xl" mb="20x">
                 Tools
@@ -72,7 +72,7 @@ const Hero = () => {
               backgroundColor="#161b22"
               borderRadius="20px"
               mt="30px"
-              p="10"
+              p={{ base: "6", md: "10" }}
             >
               <Heading color="white" fontSize="xl">
                 Description
@@ -80,7 +80,14 @@ const Hero = () => {
               <Text color="white" mt="20px">
                 {selectedProject?.fullDescription}
               </Text>
-              <Box display={{ base: "block", md: "flex" }} mt="20px" gap="5">
+              <Box
+                display={{
+                  base: selectedProject?.githubLink ? "flex" : "block",
+                  md: "flex",
+                }}
+                mt="20px"
+                gap={{ base: "3", md: "4" }}
+              >
                 <Link href={selectedProject?.liveLink} target="_blank">
                   <Button
                     rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
@@ -105,9 +112,9 @@ const Hero = () => {
                         backgroundColor: "#46ad52",
                         transform: "translateY(-0.2rem)",
                       }}
-                      ml={{ base: "7px", md: "0px" }}
+                      // ml={{ base: "7px", md: "0px" }}
                     >
-                      Github Link
+                      Github
                     </Button>
                   </Link>
                 )}
@@ -148,7 +155,12 @@ const Hero = () => {
             </Box>
           </AnimationBox>
 
-          <Box backgroundColor="#161b22" borderRadius="20px" mt="30px" p="10">
+          <Box
+            backgroundColor="#161b22"
+            borderRadius="20px"
+            mt="30px"
+            p={{ base: "6", md: "10" }}
+          >
             <Heading color="white" fontSize="xl" mb="10px">
               Deliverables
             </Heading>
