@@ -118,7 +118,7 @@ const Hero = () => {
                     </Button>
                   </Link>
                 )}
-                {selectedProject?.storeFrontOne && (
+                {/* {selectedProject?.storeFrontOne && (
                   <Link href={selectedProject?.storeFrontOne} target="_blank">
                     <Button
                       rightIcon={<ExternalLinkIcon mt="-2px" fontSize="md" />}
@@ -133,7 +133,7 @@ const Hero = () => {
                       Ngemi Homecoming Store
                     </Button>
                   </Link>
-                )}
+                )} */}
 
                 {selectedProject?.storeFrontTwo && (
                   <Link href={selectedProject?.storeFrontTwo} target="_blank">

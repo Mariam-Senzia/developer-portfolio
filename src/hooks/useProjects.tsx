@@ -2,7 +2,7 @@ const useProjects = () => {
   const projects = [
     {
       id: 1,
-      image: "/projects/DukaNext-UI.png",
+      image: "/projects/Dukanex UI.png",
       title: "DukaNext",
       description:
         "An eCommerce platform that enables shop owners to create, customize and manage their own online stores",
@@ -19,7 +19,7 @@ const useProjects = () => {
         "Puck",
       ],
       liveLink: "https://dukanext.co.ke/",
-      storeFrontOne: "https://shop.ngemihomecoming.ke/",
+      // storeFrontOne: "https://shop.ngemihomecoming.ke/",
       storeFrontTwo: "https://blaqfiti.co.ke/",
       deliverables: [
         "Built responsive storefront and admin interfaces using React and Next.js, ensuring consistent user experience across desktop and mobile devices",
