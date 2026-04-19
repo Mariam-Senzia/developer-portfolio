@@ -32,14 +32,34 @@ const Hero = () => {
           <Box
             mt="100px"
             borderRadius="20px"
-            height={{ base: "", md: "", lg: "800px" }}
+            height={{ base: "", md: "", lg: "750px" }}
             overflow="hidden"
           >
-            <Heading color="white" textAlign="center" pt="30px">
+            <Heading color="white" textAlign="center">
               {selectedProject?.title}
             </Heading>
-            <Image mt="50px" src={selectedProject?.image} borderRadius="10px" />
+            <Image mt="40px" src={selectedProject?.image} borderRadius="10px" />
           </Box>
+
+          {selectedProject?.images && selectedProject.images.length > 1 && (
+            <Box>
+              <SimpleGrid columns={{ base: 1, md: 2 }} gap="8">
+                {selectedProject.images.map((img, index) => {
+                  return (
+                    <Image
+                      key={index}
+                      src={img}
+                      borderRadius="10px"
+                      objectFit="cover"
+                      w="100%"
+                      h="300px"
+                    />
+                  );
+                })}
+              </SimpleGrid>
+            </Box>
+          )}
+
           <AnimationBox display={{ base: "block", md: "flex" }} gap="8">
             <Box
               flex="1"

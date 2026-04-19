@@ -2,6 +2,43 @@ const useProjects = () => {
   const projects = [
     {
       id: 1,
+      image: "/projects/Fullhouse-UI.png",
+      title: "Fullhouse",
+      description:
+        "A full-stack event ticketing platform with payment integration, automated PDF tickets and QR code check-in",
+      fullDescription:
+        "Fullhouse is a full-stack event ticketing platform built with React, TypeScript, Flask and PostgreSQL. It features event discovery with filtering, sorting, search and pagination, cart and checkout with guest and user support, JWT authentication, and payment processing via PesaPal. Confirmed bookings trigger an automated email with a branded PDF ticket and a unique QR code for event check-in.",
+      tools: [
+        "React",
+        "TypeScript",
+        "Flask",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Zustand",
+        "PesaPal",
+        "Brevo",
+        "Cloudinary",
+        "WeasyPrint",
+      ],
+      githubLink: "https://github.com/Mariam-Senzia/Fullhouse",
+      liveLink: "https://fullhouse-beryl.vercel.app/",
+      deliverables: [
+        "Built event listing with filtering, sorting, live search and server-side pagination",
+        "Implemented cart and checkout with guest and logged-in user support and autofill",
+        "Integrated PesaPal for payments with webhook handling for booking confirmation",
+        "Automated confirmation emails with branded PDF tickets via Brevo and WeasyPrint",
+        "Generated unique QR codes per booking stored on Cloudinary for event check-in",
+        "Deployed backend on Render and frontend on Vercel",
+      ],
+      images: [
+        "/projects/Fullhouse-Eventlisting.png",
+        "/projects/Fullhouse-Checkout.png",
+        "/projects/Fullhouse-Pesapal.png",
+        "/projects/Fullhouse-Confirmation-Email.png",
+      ],
+    },
+    {
+      id: 2,
       image: "/projects/Dukanex UI.png",
       title: "DukaNext",
       description:
@@ -32,7 +69,7 @@ const useProjects = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       image: "/projects/BlogNest-UI.png",
       title: "BlogNest",
       description:
@@ -59,7 +96,7 @@ const useProjects = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       image: "/projects/Bright-Star-UI.png",
       title: "Bright Star",
       description:
@@ -77,7 +114,7 @@ const useProjects = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       image: "/projects/Omnifood-UI.png",
       title: "Omnifood",
       description:
@@ -97,7 +134,7 @@ const useProjects = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       image: "/projects/Safiri-Africa-UI.png",
       title: "Safiri Africa",
       description:
