@@ -32,7 +32,7 @@ const HomeProjects = () => {
             px={{ base: "15px", md: "40px" }}
             py={{ base: "25px", md: "45px" }}
           >
-            {projects.slice(0, 3).map((item, index) => (
+            {projects.slice(0, 6).map((item, index) => (
               <ProjectCard item={item} index={index} />
             ))}
           </MotionGrid>

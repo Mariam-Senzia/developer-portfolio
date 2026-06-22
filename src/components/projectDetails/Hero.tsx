@@ -32,17 +32,23 @@ const Hero = () => {
           <Box
             mt="100px"
             borderRadius="20px"
-            height={{ base: "", md: "", lg: "750px" }}
+            // height={{ base: "", md: "", lg: "750px" }}
             overflow="hidden"
           >
             <Heading color="white" textAlign="center">
               {selectedProject?.title}
             </Heading>
-            <Image mt="40px" src={selectedProject?.image} borderRadius="10px" />
+            <Image
+              mt="40px"
+              src={selectedProject?.image}
+              borderRadius="10px"
+              w="100%"
+              height={{ base: "250px", md: "500px", lg: "650px" }}
+            />
           </Box>
 
           {selectedProject?.images && selectedProject.images.length > 1 && (
-            <Box>
+            <Box mt="30px">
               <SimpleGrid columns={{ base: 1, md: 2 }} gap="8">
                 {selectedProject.images.map((img, index) => {
                   return (

@@ -70,6 +70,37 @@ const useProjects = () => {
     },
     {
       id: 3,
+      image: "/projects/reqdesk/Reqdesk-UI.png",
+      title: "Reqdesk",
+      description:
+        "A request tracking app where users can submit requests and admins can view, filter, and manage them from a dashboard",
+      fullDescription:
+        "Reqdesk is a full-stack request tracking app built with React, TypeScript, Flask and PostgreSQL. Users submit requests through a public form covering bugs, feature requests, feedback, partnerships and more. Admins access a protected dashboard where they can view all incoming requests, filter by status or priority, and update request statuses through a detail drawer. The admin view is PIN protected - use PIN 1234 to access the dashboard.",
+      tools: [
+        "React",
+        "TypeScript",
+        "Flask",
+        "PostgreSQL",
+        "Chakra UI",
+        "Vite",
+      ],
+      githubLink: "https://github.com/Mariam-Senzia/reqdesk",
+      liveLink: "https://reqdesk.vercel.app/",
+      deliverables: [
+        "Built a public request submission form with required fields, validation and success feedback",
+        "Developed an admin dashboard with a paginated request list sorted by most recent",
+        "Implemented dual filtering by status and priority with instant client-side results",
+        "Built a detail drawer for viewing full request information and updating request status",
+        "Added PIN-based admin access protection with localStorage persistence",
+        "Deployed frontend on Vercel and backend on Render with Neon PostgreSQL",
+      ],
+      images: [
+        "/projects/reqdesk/Reqdesk-list.png",
+        "/projects/reqdesk/Reqdesk-drawer.png",
+      ],
+    },
+    {
+      id: 3,
       image: "/projects/blognest/BlogNest-UI.png",
       title: "BlogNest",
       description:
