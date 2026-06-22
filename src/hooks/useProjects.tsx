@@ -2,7 +2,7 @@ const useProjects = () => {
   const projects = [
     {
       id: 1,
-      image: "/projects/Fullhouse-UI.png",
+      image: "/projects/fullhouse/Fullhouse-UI.png",
       title: "Fullhouse",
       description:
         "A full-stack event ticketing platform with payment integration, automated PDF tickets and QR code check-in",
@@ -31,15 +31,15 @@ const useProjects = () => {
         "Deployed backend on Render and frontend on Vercel",
       ],
       images: [
-        "/projects/Fullhouse-Eventlisting.png",
-        "/projects/Fullhouse-Checkout.png",
-        "/projects/Fullhouse-Pesapal.png",
-        "/projects/Fullhouse-Confirmation-Email.png",
+        "/projects/fullhouse/Fullhouse-Eventlisting.png",
+        "/projects/fullhouse/Fullhouse-Checkout.png",
+        "/projects/fullhouse/Fullhouse-Pesapal.png",
+        "/projects/fullhouse/Fullhouse-Confirmation-Email.png",
       ],
     },
     {
       id: 2,
-      image: "/projects/Dukanex UI.png",
+      image: "/projects/dukanext/Dukanext-UI.png",
       title: "DukaNext",
       description:
         "An eCommerce platform that enables shop owners to create, customize and manage their own online stores",
@@ -70,7 +70,7 @@ const useProjects = () => {
     },
     {
       id: 3,
-      image: "/projects/BlogNest-UI.png",
+      image: "/projects/blognest/BlogNest-UI.png",
       title: "BlogNest",
       description:
         "A blog platform where users can view blogs, filter them by category, and publish their own after signing in",
@@ -97,7 +97,7 @@ const useProjects = () => {
     },
     {
       id: 4,
-      image: "/projects/Bright-Star-UI.png",
+      image: "/projects/brightstar/Bright-Star-UI.png",
       title: "Bright Star",
       description:
         "A professional cleaning and pest control service offering reliable, affordable, and eco-friendly solutions for homes and offices.",
@@ -115,7 +115,7 @@ const useProjects = () => {
     },
     {
       id: 5,
-      image: "/projects/Omnifood-UI.png",
+      image: "/projects/omnifood/Omnifood-UI.png",
       title: "Omnifood",
       description:
         "An AI-powered landing page promoting healthy eating through personalized meal plans.",
@@ -135,7 +135,7 @@ const useProjects = () => {
     },
     {
       id: 6,
-      image: "/projects/Safiri-Africa-UI.png",
+      image: "/projects/safiriafrica/Safiri-Africa-UI.png",
       title: "Safiri Africa",
       description:
         "A centralized platform where travelers can access comprehensive and unlimited information about African travel destinations",
